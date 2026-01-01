@@ -178,7 +178,7 @@ a:hover {
 
 .in p {
     font-size: 14px;
-    color: var(--header-text-color);
+    color: var(--text-color);
 }
 
 .the-box {
