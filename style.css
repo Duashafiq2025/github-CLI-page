@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     font-family: "Mona Sans", sans-serif;
-    ;
     margin: 0;
     padding: 0;
-    --light-text-color: #E6EDF3;
+    --text-color: #6E7781;
+    --theme-color: #0D1117;
+}
+
+.header a {
+    color: #E6EDF3;
+    text-decoration: none;
 }
 
 .header {
-    background-color: #0D1117;
+    background-color: var(--theme-color);
     padding-left: 40px;
     padding-right: 40px;
     height: 68px;
@@ -36,10 +43,7 @@
     gap: 24px;
 }
 
-.header a {
-    color: var(--light-text-color);
-    text-decoration: none;
-}
+
 
 a:hover {
     text-decoration: underline;
@@ -52,7 +56,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0D1117;
+    background-color: var(--theme-color);
     gap: 16px;
 
 }
@@ -61,20 +65,20 @@ a:hover {
     width: 650px;
     font-size: 72px;
     font-weight: 800px;
-    color: var(--light-text-color);
+    color: #E6EDF3;
 }
 
 .main p {
     width: 650px;
     font-size: 24px;
-    color: #6E7681;
-    font-weight: 450px;
+    color: var(--text-color);
+    font-weight: 450;
 }
 
 .main button {
     width: 273px;
     font-size: 20px;
-    font-weight: 600px;
+    font-weight: 600;
     border-radius: 5px;
     border: none;
     padding-top: 13px;
@@ -82,11 +86,11 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #F7F9FA;
-    color: #0D1117;
+    color: var(--theme-color);
 }
 
 .main a {
-    color: var(--light-text-color);
+    color: #E6EDF3;
     text-decoration: none;
     font-size: 14px;
 }
@@ -106,9 +110,9 @@ a:hover {
     gap: 16px;
 }
 
-.anim {
+.animation {
     height: 90vh;
-    background-color: #0D1117;
+    background-color: var(--theme-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +121,7 @@ a:hover {
 
 }
 
-.anim div {
+.animation div {
     border: 2px solid white;
     height: 480px;
     width: 1026px;
@@ -125,8 +129,11 @@ a:hover {
 
 }
 
-.anim h1 {
-    color: white;
+.animation a {
+    color: #E6EDF3;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
 }
 
 .middle {
@@ -139,7 +146,7 @@ a:hover {
 .middle h1 {
     font-size: 64px;
     padding-bottom: 48px;
-    font-weight: 800px;
+    font-weight: 800;
 }
 
 .in {
@@ -166,20 +173,28 @@ a:hover {
 
 .in h3 {
     font-size: 24px;
+    font-weight: 800;
 }
 
 .in p {
     font-size: 14px;
-    color: #6E7781;
+    color: var(--header-text-color);
 }
 
-.the-end {
+.the-box {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.end {
+.the-box img {
+    width: 1560px;
+    height: 450px;
+}
+
+.box {
+    background-color: white;
+    position: absolute;
     height: 200px;
     width: 616px;
     display: flex;
@@ -190,13 +205,13 @@ a:hover {
     margin: 40px;
 }
 
-.end div {
+.box div {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.end button {
+.box button {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 17px;
@@ -207,19 +222,101 @@ a:hover {
     width: 218.9px;
     border-radius: 5px;
     font-size: 16PX;
+    font-weight: 600;
 }
 
-.end a {
+.box a {
     color: #0969DA;
     text-decoration: none;
     font-size: 14px;
 }
 
-.end p {
+.box p {
     color: #6E7681;
     font-size: 16px;
 }
 
-.end h2 {
+.box h2 {
     font-size: 32px;
+    font-weight: 800;
+}
+
+.container {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 319px;
+    margin-left: 27px;
+    margin-right: 27px;
+
+}
+
+.container>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    height: 317px;
+}
+
+.bottom-links {
+    display: flex;
+    gap: 24px;
+    height: 319px;
+    align-items: center;
+}
+
+.bottom-links div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    gap: 16px;
+    width: 205.33px;
+    height: 240px;
+
+}
+
+.bottom-links a {
+    color: var(--text-color);
+    font-size: 14px;
+    text-decoration: none
+}
+
+.bottom-links h3 {
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bottom {
+    width: 410.66px;
+    height: 223px;
+}
+
+footer {
+
+    height: 68px;
+    background-color: #F6F8FA;
+}
+
+.end {
+    padding: 24px;
+    margin: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end div {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    color: #656D76;
+}
+
+.end a {
+    color: #656D76;
+    text-decoration: none;
+}
+
+.end svg {
+    color: #656D76;
 }
