@@ -112,26 +112,28 @@ a:hover {
 
 .animation {
     height: 780px;
-    background-color: var(--theme-color); 
+    background-color: var(--theme-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
+    gap: 30px;
     background-image: url("https://cli.github.com/assets/images/light-glow.svg ");
-    background-position: center ;
+    background-position: center;
 
 }
-.heading{
-   
+
+.heading {
+
     color: #E6EDF3;
-    font-family: "Space Mono", monospace ;
+    font-family: "Space Mono", monospace;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.heading h4{
+
+.heading h4 {
     font-weight: 400;
     font-size: 24px;
     color: #E6EDF3;
@@ -142,38 +144,46 @@ a:hover {
 .screen {
     font-family: "Space Mono", monospace;
     border-radius: 5px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 16px;
-    margin-bottom: 30px;
     height: 480px;
     width: 1010px;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 8px; 
+    gap: 25px;
 }
-.gray{
+
+.gray {
     color: #8B949E;
 }
-.green{
+
+.green {
     color: #2EA043;
 }
 
-.blue{
+.blue {
     color: blue;
 }
-.screen div{
+
+.screen div {
     display: flex;
-    gap: 4px; 
+    gap: 8px;
 }
-.circle{
+
+.screen p {
+    padding-left: 32px;
+}
+
+.circle {
     background-color: rgb(36, 36, 36);
     height: 12px;
     width: 12px;
     border-radius: 999px;
 }
+
 .animation a {
     color: #E6EDF3;
     font-size: 24px;
@@ -228,7 +238,7 @@ a:hover {
 
 .the-box {
     height: 450px;
-     display: flex;
+    display: flex;
     justify-content: center;
     background-image: url("https://cli.github.com/assets/images/square-pattern.png");
 }
@@ -262,7 +272,7 @@ a:hover {
     color: white;
     width: 218.9px;
     border-radius: 5px;
-    font-size: 16PX;
+    font-size: 16px;
     font-weight: 600;
 }
 
