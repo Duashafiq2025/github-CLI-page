@@ -240,12 +240,12 @@ a:hover {
     height: 450px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url("https://cli.github.com/assets/images/square-pattern.png");
 }
 
 .box {
     background-color: white;
-    position: absolute;
     height: 200px;
     width: 616px;
     display: flex;
